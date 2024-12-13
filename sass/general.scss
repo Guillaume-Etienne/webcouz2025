@@ -1,0 +1,100 @@
+@import "./variables";
+//@import "./menu_burger";
+//@import "./animations";
+
+// general
+
+*{
+    box-sizing: border-box;
+    margin: 10px;   
+}
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Slider */
+  .swiper-container {
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur selon ton design */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Empêche le zoom ou la déformation des images */
+  }
+  
+  /* Menu latéral */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Caché hors de l'écran */
+    width: 300px;
+    height: 100%;
+    background: #f8f8f8;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    padding: 1rem;
+  }
+  
+  .side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-menu li {
+    margin: 1rem 0;
+  }
+  
+  .side-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .close-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  /* Menu actif */
+  .side-menu.active {
+    right: 0; /* Le menu glisse à droite */
+  }
+  
+
+
+// le responsive
+@import "./responsive";
+
