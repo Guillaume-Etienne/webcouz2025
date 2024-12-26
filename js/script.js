@@ -1,9 +1,3 @@
-console.log("script.js Lancé Gui c'est bon !");
-
-// script.js
-
-// script.js
-
 // Initialiser le slider SwiperJS
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
@@ -25,9 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuToggle.addEventListener('click', () => {
     menu.classList.add('active');
+    //menuToggle.classList.add('menu-close');
   });
 
   menuClose.addEventListener('click', () => {
     menu.classList.remove('active');
+    menuToggle.classList.remove('menu-close');
   });
 });

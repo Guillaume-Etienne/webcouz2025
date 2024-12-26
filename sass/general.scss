@@ -2,37 +2,46 @@
 //@import "./menu_burger";
 //@import "./animations";
 
-/* style.css */
+/* Header / Menu / Swiper / Sections */
 
 /* Réinitialisation de base */
 * {
-  margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Nunito Sans', serif;  
-  background-color: #fff;
-  color: #333;
+  background-color: $colorbackground;
+  color: $colortextdarkgrey;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;  
 }
 
 /* --- HEADER --- */
-.header {
+.header {  
+  /* comment le rendre Sticky ? */
+  position : fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: stretch;
+  top: 0;
+}
+
+.menu-sticky{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: white;
-  //border-bottom: 1px solid #ddd;
-  position : sticky;
+  padding: 20px;    
+  margin: auto;
 }
 
 .logo {
   font-family: 'Roboto', serif;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: $colortextblack;
 }
 
 .header-links {
@@ -43,13 +52,13 @@ body {
 
 .header-links .lang {
   font-size: 16px;
-  color: #333;
+  color: $colortextblack;
   text-decoration: none;
 }
 
 .header-links .reserve-button {
-  background-color: #b59d78;
-  color: white;
+  background-color: $colorbrown;
+  color: $colorbackground;
   padding: 8px 16px;
   font-size: 1em;
   border: none;
@@ -66,7 +75,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 300px;
+  width: 600px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -74,11 +83,11 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  z-index:10;
 }
 
 .menu.active {
-  right: 0;
-  z-index:10;
+  right: 0;  
 }
 
 .menu-close {
@@ -112,7 +121,7 @@ body {
 /* --- TEXTE AU-DESSUS DU SLIDER --- */
 .intro-text {
   text-align: center;
-  margin: 40px auto 20px;
+  margin: 140px auto 20px;
   font-family: 'Nunito Sans', serif;  
 }
 
@@ -129,32 +138,35 @@ body {
 
 /* --- SLIDER --- */
 .slider {
-  width: 100%;
-  margin-top: 20px;
+  width: 100%;  
+  margin-top: 20px;  
 }
 
 .swiper {
   width: 90%;
   max-width: 1200px;
-  height: 400px;
+  height: 600px;          /* MODIFIER EN RESPONSIVE */
   margin: 0 auto;
 }
+
+
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  
 }
 
-// /* --- BOUTONS DE NAVIGATION --- */
+// /* --- BOUTONS DE NAVIGATION  Swiper --- */
 
-/*  Nouvelle version 
+ 
 
 /* Boutons de navigation personnalisés */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: ''; /* Supprime le texte par défaut (prev, next) */
 }
+
 
 .swiper-button-prev::before,
 .swiper-button-next::before {
@@ -171,8 +183,8 @@ body {
 /* Ajout d'un style pour les boutons (optionnel, ajustez selon la maquette) */
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
-  border-radius: 50%; /* Boutons circulaires */
+  background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
+  border-radius: 0%; /* Boutons circulaires */
   width: 40px;
   height: 40px;
   display: flex;
@@ -191,3 +203,8 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+
+/* --- SECTION --- */
+.hero-white {
+  
+}
