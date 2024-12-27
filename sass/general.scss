@@ -19,42 +19,28 @@ body {
   margin-right: auto;  
 }
 
-/* --- HEADER --- */
-.headerBAK {
-  position : fixed;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: stretch;
-  top: 0;
-}
-
-
+/* Header */
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;  
   z-index: 1000;
-  transition: transform 0.3s ease; /* Transition fluide */
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
-/* Classe pour cacher le header */
 .header.hidden {
-  transform: translateY(-100%); /* Fait disparaître le header vers le haut */
+  transform: translateY(-100%);
 }
 
-.menu-sticky{
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;    
-  margin: auto;
 }
 
 .logo {
@@ -96,26 +82,30 @@ body {
   top: 0;
   right: -100%;
   width: 600px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;    
   transition: right 0.4s ease;
   padding: 20px;
   display: flex;
   flex-direction: column;
   z-index:10;
 }
-
 .menu.active {
-  right: 0;  
+  right: 0;
+  background-color: $colorbrown;
 }
 
+.menu-white{
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
 .menu-close {
+  color: $colorbackground;
   align-self: flex-end;
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  transform: translateY(-18px);
 }
 
 .menu ul {
