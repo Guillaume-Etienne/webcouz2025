@@ -20,13 +20,33 @@ body {
 }
 
 /* --- HEADER --- */
-.header {  
-  /* comment le rendre Sticky ? */
+.headerBAK {
   position : fixed;
   margin-left: 20px;
   margin-right: 20px;
   width: stretch;
   top: 0;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Transition fluide */
+}
+
+/* Classe pour cacher le header */
+.header.hidden {
+  transform: translateY(-100%); /* Fait disparaître le header vers le haut */
 }
 
 .menu-sticky{

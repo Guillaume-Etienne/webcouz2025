@@ -1,3 +1,6 @@
+// Swiper     / Menu qui disparaît au scroll
+
+
 // Initialiser le slider SwiperJS
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
@@ -26,4 +29,24 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.remove('active');
     menuToggle.classList.remove('menu-close');
   });
+});
+
+// ------------Menu scroll ------------
+// Sélectionner le header
+const header = document.querySelector('.header');
+
+// Variables pour suivre le dernier scroll
+let lastScrollY = window.scrollY;
+
+// Détecter la direction du scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY) {
+    // Si on scrolle vers le bas, cacher le header
+    header.classList.add('hidden');
+  } else {
+    // Si on scrolle vers le haut, afficher le header
+    header.classList.remove('hidden');
+  }
+  // Mettre à jour la position précédente du scroll
+  lastScrollY = window.scrollY;
 });
