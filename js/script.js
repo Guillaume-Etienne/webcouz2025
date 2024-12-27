@@ -1,4 +1,4 @@
-// Swiper     / Menu qui disparaît au scroll
+// Swiper   /Menu burger   / Menu qui disparaît au scroll
 
 
 // Initialiser le slider SwiperJS
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // Gérer l'ouverture et la fermeture du menu
+  // Menu Burger
   const menu = document.querySelector('.menu');
   const menuToggle = document.querySelector('.menu-toggle');
   const menuClose = document.querySelector('.menu-close');
@@ -40,11 +40,9 @@ let lastScrollY = window.scrollY;
 
 // Détecter la direction du scroll
 window.addEventListener('scroll', () => {
-  if (window.scrollY > lastScrollY) {
-    // Si on scrolle vers le bas, cacher le header
+  if (window.scrollY > lastScrollY) {    
     header.classList.add('hidden');
   } else {
-    // Si on scrolle vers le haut, afficher le header
     header.classList.remove('hidden');
   }
   // Mettre à jour la position précédente du scroll
