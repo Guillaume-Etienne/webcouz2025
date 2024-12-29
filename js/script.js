@@ -1,6 +1,6 @@
 // Swiper   /Menu burger   / Menu qui disparaît au scroll
 
-
+//  -------------- Swiper --------------
 // Initialiser le slider SwiperJS
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper', {
@@ -14,22 +14,35 @@ document.addEventListener('DOMContentLoaded', () => {
       disableOnInteraction: false,
     },
   });
+});
+// -------------  Menu Burger -----------
+const menu = document.querySelector('.menu');
+const menuToggle = document.querySelector('.menu-toggle');
+const menuClose = document.querySelector('.menu-close');
+const menuLinks = document.querySelectorAll('.menu a');
 
-  // Menu Burger
-  const menu = document.querySelector('.menu');
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menuClose = document.querySelector('.menu-close');
+menuToggle.addEventListener('click', () => {
+  menu.classList.add('active');  
+});
 
-  menuToggle.addEventListener('click', () => {
-    menu.classList.add('active');
-    //menuToggle.classList.add('menu-close');
-  });
-
-  menuClose.addEventListener('click', () => {
+menuClose.addEventListener('click', () => {
+  menu.classList.remove('active');
+  menuToggle.classList.remove('menu-close');
+});
+// fermer le menu au clic en dehors
+document.addEventListener('click', (event) => {
+  if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+      menu.classList.remove('active');
+  }
+});
+// Fermer le menu au clic sur un lien
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
     menu.classList.remove('active');
-    menuToggle.classList.remove('menu-close');
   });
 });
+
+
 
 // ------------Menu scroll ------------
 // Sélectionner le header
