@@ -3,7 +3,7 @@
 //@import "./menu_burger";
 //@import "./animations";
 
-/* Header / Menu / Swiper / Sections */
+/* Header / Menu / Swiper / Sections / Rooms */
 
 /* Réinitialisation de base */
 * {
@@ -347,6 +347,12 @@ body {
   border: 2px solid $colorbrown;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* rooms */
+.flex-room{
+  display: flex;
+  flex-direction: row
 }
 
 @import "./responsive";
