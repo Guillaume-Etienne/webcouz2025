@@ -9,8 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <!-- CSS Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- Ton CSS -->
+  <!-- CSS (saas)-->
   <link rel="stylesheet" href="./css/general.css">
+  <!-- Icônes -->
+  <script src="https://kit.fontawesome.com/0bdd5e4611.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
@@ -76,13 +78,21 @@
       <div class="swiper-button-next"></div>
     </div>
   </section>
-
+  <!-- Maison -->
   <main class="main" id="maison">
     <div class="background-image">
       <img src="./img/galery/03 HOME .webp" alt="Maison en pierre dans un cadre naturel">
     </div>
     <div class="content">
-      <h1 class="title">La Maison</h1>
+      <div class="title-icon">
+        <h1 class="title">La Maison</h1>
+        <div class="icon">
+          <i class="fas fa-gas-pump"></i>
+          <p>
+            Chargeur <br> électrique
+          </p>
+        </div>
+      </div>
       <p class="subtitle">Douceur de vivre</p>
       <p class="description">
         Simplicité et sincérité, le domaine ce sont les tilleuls et les chênes multi-centenaire et ses vues sur la vallée.
@@ -93,13 +103,10 @@
       <p class="description">
         Au cœur du Puy de Dôme, le lieu privilégié d’une vue sur les volcans du Puy de Sancy, la bâtisse principale se compose de <strong>quatre chambres spacieuses</strong> dont une suite et un studio indépendant ainsi qu’une <strong>salle de pratique</strong> dédiée à la relaxation et à la méditation.
       </p>
-      <div class="icon">
-        <span>⚡</span> Chargeur électrique
-      </div>
     </div>
     <div class="scroll-indicator">Scroll down</div>
   </main>
-  <!-- Maison -->
+  <!-- Salon Cuisine -->
   <section class="main">
     <div class="background-image">
       <img src="./img/Salon.webp" alt="Vue d'une autre maison dans la vallée">
@@ -107,19 +114,35 @@
     <div class="content">
       <h2 class="title">Le salon & la cuisine</h2>
       <p class="subtitle">Luminosité & pleine vue sur la vallée.</p>
-      <p class="description">
-        Nichée dans un écrin de verdure, la grange rénovée offre une expérience unique alliant rusticité et modernité.
-      </p>
-      <div class="icon">
-        <span>🌿</span> Chauffage sol
-      </div><div class="icon">
-        <span>🌿</span> Climatisation réversible
-      </div>
-      <div class="icon">
-        <span>🌿</span> Poêle à bois de masse
-      </div>
-      <div class="icon">
-        <span>🌿</span> Cuisine toute équipée
+      <div class="column-icons">
+        <div class="list-icons">
+          <div class="icons">
+            <i class="fas fa-cloud-sun"></i> <p>Chauffage sol</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-fan"></i> <p>Climatisation réversible</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-fire"></i> <p>Poil à bois de masse</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-utensils"></i> <p>Cuisine toute équipée</p>
+          </div>
+        </div>
+        <div class="list-icons">
+          <div class="icons">
+            <i class="fas fa-eye"></i> <p>Vue panoramique</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-video"></i> <p>Projecteur + Ecran 16/9</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-toilet"></i> <p>Toilettes séparées</p>
+          </div>
+          <div class="icons">
+            <i class="fas fa-wifi"></i> <p>Wifi / wire</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="scroll-indicator">Scroll down</div>
@@ -272,6 +295,6 @@ votre séjour soit une réussite.
   <!-- JS Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Ton JS -->
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>  
 </body>
 </html>

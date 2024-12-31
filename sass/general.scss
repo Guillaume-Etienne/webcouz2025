@@ -254,6 +254,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.title-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .title {
   font-size: 32px;
   font-weight: bold;
@@ -261,8 +268,26 @@ body {
   margin-bottom: 10px;
 }
 
-.subtitle {
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  & i{
+    font-size: 1.5em;    
+  }
+}
+.icon p {
+  font-size: 0.7em;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.icon span {
   font-size: 20px;
+  margin-right: 10px;
+}
+.subtitle {
+  font-size: 1em;
   color: $colorbrown;
   margin-bottom: 20px;
 }
@@ -272,16 +297,29 @@ body {
   margin-bottom: 15px;
 }
 
-.icon {
+/* multi - icones */
+.column-icons {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
-  font-weight: bold;
 }
 
-.icon span {
-  font-size: 20px;
-  margin-right: 10px;
+.list-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  & i {
+    margin-left: 10px;
+    color: $colorbrown;
+  }
+  & p {
+    margin-left: 10px;
+    font-size: 0.7em;
+  }
 }
 
 .scroll-indicator {
