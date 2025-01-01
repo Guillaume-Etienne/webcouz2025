@@ -1,8 +1,4 @@
 @import "./variables";
-
-//@import "./menu_burger";
-//@import "./animations";
-
 /* Header / Menu / Swiper / Sections / Rooms */
 
 /* Réinitialisation de base */
@@ -194,21 +190,19 @@ body {
 .swiper-button-next::before {
   content: '<'; /* Définit "<" pour le bouton précédent */
   font-size: 20px;
-  font-family: 'Arial', sans-serif;
-  color: #b59d78; /* La couleur dorée de ton design */
+  font-family: 'Arial', sans-serif;  
 }
 
 .swiper-button-next::before {
   content: '>'; /* Définit ">" pour le bouton suivant */
 }
 
-/* Ajout d'un style pour les boutons (optionnel, ajustez selon la maquette) */
+/* Ajout d'un style pour les boutons (optionnel,) */
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
-  border-radius: 0%; /* Boutons circulaires */
+  background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */  
   width: 40px;
-  height: 40px;
+  // height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,6 +215,7 @@ body {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: #b59d78; /* Fond doré sur hover */
+  opacity: 0.6;
   color: #fff; /* Flèches blanches sur hover */
   transition: all 0.3s ease-in-out;
 }
@@ -349,10 +344,28 @@ body {
   cursor: pointer;
 }
 
-/* rooms */
+/*             -----   rooms  -----   */
+
 .flex-room{
+  margin-top: 30px;
   display: flex;
-  flex-direction: row
+  flex-direction: row; 
 }
+.room-swiper{
+background-color: aqua;
+width: 70%;
+
+
+}
+.room-right{
+
+}
+
+#swiper-rooms {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 
 @import "./responsive";
