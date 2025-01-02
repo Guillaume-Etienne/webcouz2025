@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Poumerole</title>
+  <title>Les Chambres de la Poumerole</title>
   <!-- Polices Google -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <!-- CSS Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- Ton CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/general.css">
+  <!-- Icônes -->
+  <script src="https://kit.fontawesome.com/0bdd5e4611.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
@@ -45,17 +47,42 @@
     </nav>
   </header>
   <!-- Main -->
+  <!-- Les Chambres -->
+  <div class="main" id="maison">
+    <div class="background-image" id="top0">
+      <img src="./img/rooms/room-main.webp" alt="Porte intérieur de la maison">
+    </div>
+    <div class="content">
+      <h1 class="title">Les Chambres</h1>
+      <p class="subtitle">Douceur de vivre</p>
+      <p class="description">
+        Toutes les chambres et les salles des bains
+sont spacieuses et confortables. Elles
+offrent le plaisir du partage dans le plus
+grand confort pour chacun.
+Chaque chambre a sa singularité. Beaux et
+nobles matériaux, maçonneries à
+l’ancienne, finitions en chêne… Chaque
+détail compte pour apporter ce
+supplément d’âme et vous faire sentir
+ailleurs… quelque part où vous vous sentez
+bien… c’est ici… poussez la porte et
+entrez…
+      </p>
+    </div>
+    <div class="scroll-indicator">Scroll down</div>
+  </div>
   <main>
     <div class="flex-room">
       <div class="room-swiper">        
-        <section id="swiper-rooms" class="slider">
-          <div class="swiper">
+        <section id="slider-rooms" class="slider">
+          <div class="swiper" id="swiper-rooms">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <img src="./img/galery/01 OUTSIDE.webp" alt="Maison au coucher de soleil">
+                  <img src="./img/rooms/LaPano/LaPano1.webp" alt="Maison au coucher de soleil">
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/galery/03 HOME .webp" alt="Vue extérieure">
+                  <img src="./img/rooms/LaPano/LaPano2.webp" alt="Vue extérieure">
                 </div>
                 <div class="swiper-slide">
                   <img src="./img/galery/04 Bella View Poum.webp" alt="Paysage">
@@ -74,26 +101,47 @@
         </section>
       </div>
       <div class="room-right">
-        <section class="main">
+        <div class="mainroomright">
           <div class="background-image">
             <img src="./img/CHB1-1.webp" alt="Vue intérieur d'une chambre">
           </div>
           <div class="content">
-            <h2 class="title">Chambres de la Maison</h2>
-            <p class="subtitle">Douceur de vivre</p>
+            <h2 class="title">Suite LaPano</h2>
+            <p class="subtitle">Un nid au paradis.</p>
             <p class="description">
-              Spacieuses & lumineuses offrant tout le confort du
-      moderne avec le cachet des matériaux nobles et une
-      vue sur le parc et la vallée qui vous enchanteront.
+              Cette suite offre un confort sensitif et visuel.
+Composée d’un bureau avec un canapé
+convertible 140cm, d’une chambre avec un
+lit double 160cm et sa salle de bain ainsi
+que d’un dressing qui dessert des toilettes
+séparées. Chacun des espaces à une vue
+imprenable sur la vallée et le Puy de Sancy.
             </p>
-            <div class="flex-button">
-              <a href="./rooms.html" target="_blank">
-                <button class="know-more-button">EN SAVOIR PLUS</button>
-              </a>
+            <div class="column-icons">
+              <div class="list-icons">
+                <div class="icons">
+                  <i class="fas fa-cloud-sun"></i> <p>Chauffage sol</p>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-fan"></i> <p>Climatisation réversible</p>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-wifi"></i> <p>Wifi / wire</p>
+                </div>
+              </div>
+              <div class="list-icons">
+                <div class="icons">
+                  <i class="fas fa-eye"></i> <p>Vue panoramique</p>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-bath"></i> <p>Baignoire et douche</p>
+                </div>
+                <div class="icons">
+                  <i class="fas fa-toilet"></i> <p>Toilettes séparées</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="scroll-indicator">Scroll down</div>
-        </section>
+        </div>
       </div>
     </div>
   </main>
