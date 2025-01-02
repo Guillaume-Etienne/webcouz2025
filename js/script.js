@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 // -------------  Menu Burger -----------
 const menu = document.querySelector('.menu');
 const menuToggle = document.querySelector('.menu-toggle');

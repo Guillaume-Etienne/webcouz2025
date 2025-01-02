@@ -167,8 +167,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -177,7 +175,6 @@ body {
 
 // /* --- BOUTONS DE NAVIGATION  Swiper --- */
 
- 
 
 /* Boutons de navigation personnalisés */
 .swiper-button-prev::after,
@@ -356,17 +353,15 @@ body {
 .room-swiper{
   width: 70%;
 }
-.room-right{
-
-}
 #slider-rooms {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
-#swiper-rooms {
-  height: 600px; // pour pouvoir le différencier du home
+#swiper-rooms {  
+  height: 600px;          /* MODIFIER EN RESPONSIVE */  
 }
+
 .mainroomright {
   position: relative;
   width: 100%;
