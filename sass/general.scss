@@ -1,5 +1,5 @@
 @import "./variables";
-/* Header / Menu / Swiper / Sections / Rooms */
+/* Header / Menu / Swiper / Sections / Rooms  / offres */
 
 /* Réinitialisation de base */
 * {
@@ -371,5 +371,103 @@ body {
   justify-content: space-between;
 }
 
+/* --- SECTION OFFRES --- */
+.reserve-btn {
+  background-color: #C5B391;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#h1-offres {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 2rem 0;
+  color: $colortextblack;
+}
+
+.axes-container {
+  margin: 0 auto;
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.axes-container:before {
+  content: "";  
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Salon/miroir.webp");
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; /* Place le pseudo-élément derrière le contenu */
+}
+
+.flex-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;  
+}
+.axe-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;  
+}
+
+.axe-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.axe-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.axe-description {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.axe-footer {
+  font-style: italic;
+  color: $colorbrown;
+  padding: 1rem;
+}
+
+.info-section {
+  text-align: center;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.info-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid $colorbrown;
+  color: $colorbrown;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 0;
+  background-color: $colorbackground
+}
 
 @import "./responsive";

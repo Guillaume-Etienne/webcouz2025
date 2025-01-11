@@ -47,159 +47,43 @@
   <!-- Main -->
   
   <main class="axes-container">
-    <section class="axe-card">
+    <section>
+      <h1 id="h1-offres">- 3 axes -</h1>
+    </section>
+    <div class="flex-card">
+      <section class="axe-card">
         <h2 class="axe-title">- Séminaires professionnels -</h2>
-        <img src="./img/CHB1-1.webp" alt="Séminaires" class="axe-image">
+        <img src="./img/6peoplesunset.webp" alt="Séminaires" class="axe-image">
         <div class="axe-description">
-            <p>Journées d'études, réunions commerciales, formations, conférences, séminaires d'entreprise, lancements produit, worshops, team building...</p>
+          <p>Journées d'études, réunions commerciales, formations, conférences, séminaires d'entreprise, lancements produit, worshops, team building...</p>
         </div>
         <p class="axe-footer">Organisé par les professionnels ou/et par notre équipe.</p>
-    </section>
-
-    <section class="axe-card">
+      </section>
+      <section class="axe-card">
         <h2 class="axe-title">- Pratiques / bien-être -</h2>
-        <img src="./img/CHB1-1.webp" alt="Bien-être" class="axe-image">
+        <img src="./img/praying.webp" alt="méditant" class="axe-image">
         <div class="axe-description">
-            <p>Yoga, Qi Gong, MBSR, méditation, jeûne. Ateliers respiration, nutrition, danse, marches, dessin, sculpture...</p>
-            <p>Stages, conférences, formations.</p>
+          <p>Yoga, Qi Gong, MBSR, méditation, jeûne. Ateliers respiration, nutrition, danse, marches, dessin, sculpture...</p>
+          <p>Stages, conférences, formations.</p>
         </div>
         <p class="axe-footer">Organisé par les enseignants ou/et par notre équipe.</p>
-    </section>
-
-    <section class="axe-card">
+      </section>
+      <section class="axe-card">
         <h2 class="axe-title">- Bouddhisme -</h2>
-        <img src="./img/CHB1-1.webp" alt="Bouddhisme" class="axe-image">
+        <img src="./img/rooms/sideboudha.webp" alt="Bouddhisme" class="axe-image">
         <div class="axe-description">
-            <p>Nuitées & séjours possibles lors d'évènements, d'enseignements à Dhagpo Kundreul Ling ou encore de courtes retraites encadrées.</p>
+          <p>Nuitées & séjours possibles lors d'évènements, d'enseignements à Dhagpo Kundreul Ling ou encore de courtes retraites encadrées.</p>
         </div>
-    </section>
+      </section>
+    </div>
+    <section class="info-section">
+      <a href="./index.html#contact" class="info-button">INFORMATIONS & RÉSERVATIONS</a>
+  </section>
 </main>
 
-<section class="info-section">
-    <a href="#" class="info-button">INFORMATIONS & RÉSERVATIONS</a>
-</section>
+
   
   <!--  JS -->
   <script src="./js/script.js"></script>
 </body>
 </html>
-<style>
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-  }
-
-  .header {
-      background-image: url('/api/placeholder/1200/300');
-      background-size: cover;
-      padding: 2rem;
-      text-align: center;
-      color: white;
-  }
-
-  .nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem;
-  }
-
-  .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-  }
-
-  .language-select {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-  }
-
-  .reserve-btn {
-      background-color: #C5B391;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-  }
-
-  .main-title {
-      font-size: 3rem;
-      font-style: italic;
-      margin: 2rem 0;
-  }
-
-  .axes-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 80px auto;
-      background-image: url("./img/arcenciel.webp") ;
-      opacity: 0.5;
-  }
-
-  .axe-card {
-      flex: 1;
-      min-width: 300px;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      background-color: white;
-  }
-
-  .axe-title {
-      text-align: center;
-      padding: 1rem;
-      font-size: 1.2rem;
-  }
-
-  .axe-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-  }
-
-  .axe-description {
-      padding: 1rem;
-      flex-grow: 1;
-  }
-
-  .axe-footer {
-      font-style: italic;
-      color: #C5B391;
-      padding: 1rem;
-  }
-
-  .info-section {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f5f5f5;
-  }
-
-  .info-button {
-      display: inline-block;
-      padding: 1rem 2rem;
-      border: 2px solid #C5B391;
-      color: #C5B391;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin-top: 2rem;
-  }
-
-  @media (max-width: 768px) {
-      .axes-container {
-          flex-direction: column;
-          align-items: center;
-      }
-
-      .axe-card {
-          width: 100%;
-      }
-  }
-</style>
