@@ -44,22 +44,33 @@ menuLinks.forEach(link => {
   });
 });
 
-
-
 // ------------Menu scroll ------------
 // Sélectionner le header
 const header = document.querySelector('.header');
-
 // Variables pour suivre le dernier scroll
 let lastScrollY = window.scrollY;
+let scrollDelta = 0;
+// Seuil de scroll pour la disparition
+const scrollThreshold = 150;
 
 // Détecter la direction du scroll
 window.addEventListener('scroll', () => {
+  // Calculer la différence de scroll depuis le dernier changement de direction
   if (window.scrollY > lastScrollY) {    
-    header.classList.add('hidden');
+    // Scroll vers le bas
+    if (scrollDelta < 0) scrollDelta = 0; // Réinitialiser si changement de direction
+    scrollDelta += window.scrollY - lastScrollY;
+    
+    if (scrollDelta > scrollThreshold) {
+      header.classList.add('hidden');
+    }
   } else {
+    // Scroll vers le haut
+    if (scrollDelta > 0) scrollDelta = 0; // Réinitialiser si changement de direction
+    scrollDelta += window.scrollY - lastScrollY;
     header.classList.remove('hidden');
   }
+  
   // Mettre à jour la position précédente du scroll
   lastScrollY = window.scrollY;
 });

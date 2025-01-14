@@ -389,6 +389,42 @@ body {
   color: $colorbrown;
   margin-bottom: 20px;
 }
+/*      ----  Contact   -----   */
+.contact-container {
+  margin: 0 auto;
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.contact-card{
+  margin: 300px auto 10px auto;
+  padding: 30px;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255, 0.5);
+  
+  & h2, & h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+  }
+}
+
+.contact-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/river.webp");
+  background-size: cover;  
+  z-index: -1; /* Place le pseudo-élément derrière le contenu */
+}
 
 /*             -----   rooms  -----   */
 #maison {      //trouver une solution
