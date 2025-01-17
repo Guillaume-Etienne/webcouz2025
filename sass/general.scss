@@ -1,10 +1,13 @@
 @import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 /* Header / Menu / Swiper / Sections / Rooms  / offres */
 
 /* Réinitialisation de base */
-* {
-  
+* {  
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 
 body {
@@ -46,6 +49,12 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: $colortextblack;
+  text-shadow: 0px 0px 1px white;
+}
+
+.menu-toggle {
+  font-size: 1.1em;
+  text-shadow: 0px 0px 1px white;
 }
 
 .header-links {
@@ -348,6 +357,7 @@ body {
   flex-direction: row;  
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
   height: 100vh;
@@ -375,6 +385,8 @@ body {
   & h2, & h3{
     text-align: center;
     color: black;
+    margin: 0;
+    text-shadow: 0px 0px 1px white;
   }
 }
 
@@ -388,6 +400,13 @@ body {
   font-size: 1.5em;
   color: $colorbrown;
   margin-bottom: 20px;
+}
+
+#logo-rejoice {
+  width: 150px;
+  margin: 5px auto;
+  display: block;
+  box-shadow: 2px 2px 5px grey;
 }
 /*      ----  Contact   -----   */
 .contact-container {
@@ -403,15 +422,29 @@ body {
 }
 
 .contact-card{
-  margin: 300px auto 10px auto;
+  margin: 100px auto 10px auto;
+  width: 90%;
+  min-width: 500px;
   padding: 30px;
   max-width: 600px;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.6);
   
   & h2, & h3{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Marck Script", serif;
+    font-weight: 400;
+    font-size: 5em;
+    font-style: normal;
     text-align: center;
     color: black;
+  }
+  & p{
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+  }
+  & button{
+    margin: 20px auto;
+    display: block;
   }
 }
 

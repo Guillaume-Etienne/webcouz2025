@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 3000,
       disableOnInteraction: false,
     },
+    speed: 1500
   });
 });
 
