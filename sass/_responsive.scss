@@ -4,6 +4,9 @@
 }
 @media screen and (max-width: 1280px) {
 // faut faire qq chose la
+.content{
+    padding: 10px;
+}
 
 }
 @media screen and (max-width: 780px) {
@@ -49,6 +52,7 @@
     margin-top: 0;
 }
 .content{
+    padding: 20px 30px;
     margin: 100px 0 0 0;
     max-width: 100%;
     box-shadow: none;
