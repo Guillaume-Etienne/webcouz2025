@@ -453,6 +453,9 @@ body {
     margin: 20px auto;
     display: block;
   }
+  & a:link, & a:visited{
+    color: $colortextblack;
+  }
 }
 
 .contact-container:before {
@@ -467,7 +470,7 @@ body {
 }
 
 /*             -----   rooms  -----   */
-#maison {      //trouver une solution
+#maison, #maison-room {      //trouver une solution
   margin-top: -10px;
 }
 .flex-room{
