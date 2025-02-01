@@ -17,7 +17,8 @@ body {
   color: $colortextdarkgrey;
   max-width: 1600px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  text-align: justify;
 }
 
 /* Header */
@@ -439,7 +440,7 @@ body {
   background-color: rgb(255, 255, 255, 0.6);
   
   & h2, & h3{
-    font-family: "Marck Script", serif;
+    font-family: "Great Vibes", serif;
     font-weight: 400;
     font-size: 5em;
     font-style: normal;
@@ -598,6 +599,21 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   background-color: $colorbackground
+}
+.calendrier{
+  margin : 20px auto;  
+  display: flex;
+  flex-direction: column;
+  & h2{
+    text-align: center;
+    color: $colorbrown;
+  }
+}
+#iframe-calendar{
+  margin: 10px auto;
+  border: 0;
+  width :100%;
+  height:600px;  
 }
 
 @import "./responsive";
