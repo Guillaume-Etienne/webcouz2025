@@ -580,8 +580,10 @@ body {
 
 .axe-footer {
   font-style: italic;
+  margin: 5px;
   color: $colorbrown;
   padding: 1rem;
+  border: 2px solid $colorbrown;
 }
 
 .info-section {
