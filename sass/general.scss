@@ -313,6 +313,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  padding: -0;
 }
 
 .list-icons {
@@ -329,7 +330,8 @@ body {
   }
   & p {
     margin-left: 10px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-align: left;
   }
 }
 
@@ -484,15 +486,17 @@ body {
 .room-swiper{
   width: 70%;
 }
-#slider-rooms, #slider-rooms2 {
+#slider-rooms, #slider-rooms2, #slider-rooms3, #slider-rooms4 {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
-#swiper-rooms, #swiper-rooms2 {
+#swiper-rooms, #swiper-rooms2, #swiper-rooms3, #swiper-rooms4 {
   height: 600px;          /* MODIFIER EN RESPONSIVE */  
 }
-
+#swiper-rooms4{
+  margin-bottom: 50px;
+}
 .mainroomright {
   position: relative;
   width: 100%;
