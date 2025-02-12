@@ -102,12 +102,13 @@ body {
     margin-top: 30px;
     width: 100%;
     display: flex;
+    gap: 1rem;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 .card {
-    flex:1;    
+    flex:1;
     display: flex;
     flex-direction: column;
 }
@@ -179,7 +180,7 @@ body {
         padding: 1rem;
     }
     .card h3{
-        height: 100px;
+        height: 150px;
         font-size: 1.2rem;
     }
     .card img{
