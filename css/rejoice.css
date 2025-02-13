@@ -12,6 +12,9 @@ body {
     color: #333;
 }
 
+h1 {
+    display: none;
+}
 .header-pc img{
     width: 100%;
     height: 100%;
@@ -128,20 +131,19 @@ body {
     color:darkblue
 }
 .card p{
-    max-width: 200px;
+    max-width: 250px;
     color:darkblue;
     margin: 20px auto;
     font-size: 1.8rem;
-    text-align: justify;
 }
 #prog-footer{
     background-color: #f0f0f0; 
-  padding: 10px;
-  border: 2px solid #aaa;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  line-height: 1.5;
+    padding: 10px;
+    border: 2px solid #aaa;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
 }
 #page-soutien img{
     width: 100%;
@@ -158,18 +160,28 @@ body {
     }
     .header {
         display: block;
-        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/api/placeholder/1200/400');
+        background-image: url("../img/rejoice/bande.webp");
         background-size: cover;
         background-position: center;
         padding: 2rem;
         text-align: center;
-        /* color: #fff; */
+        color: #fff;
         position: relative;
     }
     .mission-title {
         font-size: 1.4rem;
     }
-
+    .header img{
+        width: 50%;
+    }
+    .quote{
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: large;
+    }
+    .quote-author{
+        font-size: small;
+    }
     .profile-image {
         float: none;
         display: block;
@@ -182,6 +194,8 @@ body {
     .card h3{
         height: 150px;
         font-size: 1.2rem;
+        max-width: 300px;
+        margin: 10px auto;
     }
     .card img{
         width: 150px;
