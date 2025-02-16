@@ -149,6 +149,14 @@ h1 {
     width: 100%;
 }
 
+.toggle-button {
+    width: 100%;
+}
+
+#googleform{
+    width: 100%;
+    height: 1300px;
+}
 .additional-text{
     display: none;
 }
